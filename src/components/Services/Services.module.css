@@ -1,0 +1,46 @@
+.services {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    background: var(--bg-color);
+}
+
+.servicesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.serviceBox {
+    flex: 1 1 300px;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s ease;
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.serviceBox h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.serviceBox p {
+    font-size: 1.1rem;
+    color: var(--dim-text);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+    .services {
+        padding-bottom: 7rem;
+    }
+}

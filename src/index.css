@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;800&display=swap');
+
+:root {
+  --bg-color: #0f172a;
+  /* Slate 900 */
+  --second-bg-color: #1e293b;
+  /* Slate 800 */
+  --text-color: #f8fafc;
+  /* Slate 50 */
+  --main-color: #0ea5e9;
+  /* Sky 500 */
+  --hover-color: #38bdf8;
+  /* Sky 400 */
+  --dim-text: #94a3b8;
+  /* Slate 400 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--second-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
+/* Global Utility Classes */
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.highlight {
+  color: var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2.4rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  font-size: 1.2rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.4s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px var(--main-color),
+    0 0 40px var(--main-color);
+  transform: scale(1.05);
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+}

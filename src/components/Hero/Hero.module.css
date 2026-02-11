@@ -1,0 +1,128 @@
+.home {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.homeContent h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.homeContent h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.homeContent h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(to right, #f8fafc, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homeContent p {
+    font-size: 1.2rem;
+    color: var(--dim-text);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.socialMedia a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin: 0 1rem 3rem 0;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.socialMedia a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--main-color),
+        0 0 40px var(--main-color);
+    transform: scale(1.05);
+}
+
+.homeImg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.2);
+    border: 2px solid rgba(14, 165, 233, 0.3);
+}
+
+.imgBox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.imgBox:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .homeContent h3 {
+        font-size: 2rem;
+    }
+
+    .homeContent h1 {
+        font-size: 4rem;
+    }
+
+    .homeImg {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}

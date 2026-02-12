@@ -3,6 +3,7 @@ import { ReactTyped } from "react-typed";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
+import profileImg from '../../assets/profile.jpg';
 
 const Hero = () => {
     return (
@@ -30,13 +31,16 @@ const Hero = () => {
                 <p>Senior .Net Developer with 20+ years of experience in designing and developing scalable, high-performance enterprise applications. Expert in modernizing legacy systems and leading technical teams.</p>
 
                 <div className={styles.socialMedia}>
-                    <a href="#"><FaLinkedinIn /></a>
-                    <a href="#"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/lijupk" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                     <a href="#"><FaTwitter /></a>
-                    <a href="mailto:contact@example.com"><FaEnvelope /></a>
+                    <a href="mailto:lijupk@gmail.com"><FaEnvelope /></a>
                 </div>
 
-                <a href="#projects" className={styles.btn}>View My Work</a>
+                <div className={styles.btnBox}>
+                    <a href="#projects" className={styles.btn}>View My Work</a>
+                    <a href="https://drive.google.com/file/d/1g4VCKlFncP5OpktlfdAK8QzhfKTislKl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.btn}>Resume</a>
+                </div>
             </motion.div>
 
             <motion.div
@@ -46,7 +50,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.5 }}
             >
                 <div className={styles.imgBox}>
-                    <img src="https://placehold.co/400x500/1a1a1a/FFF?text=LPK" alt="Liju Pullely Kochappan" />
+                    <img src={profileImg} alt="Liju Pullely Kochappan" />
                 </div>
             </motion.div>
         </section>

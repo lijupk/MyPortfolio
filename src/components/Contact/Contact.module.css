@@ -42,6 +42,21 @@
     border-color: var(--main-color);
 }
 
+.successMessage {
+    background: rgba(14, 165, 233, 0.1);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 @media (max-width: 991px) {
     .contact {
         min-height: auto;

@@ -80,6 +80,11 @@
     transform: scale(1.05);
 }
 
+.btnBox {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .homeImg {
     flex: 1;
     display: flex;

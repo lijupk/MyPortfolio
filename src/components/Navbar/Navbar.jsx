@@ -44,7 +44,7 @@ const Navbar = () => {
 
     return (
         <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
-            <a href="#home" className={styles.logo}>Liju<span className={styles.highlight}>.Dev</span></a>
+            <a href="#home" className={styles.logo}>Liju <span className={styles.highlight}>Pullely</span></a>
 
             <nav className={`${styles.navbar} ${isMenuOpen ? styles.active : ''}`}>
                 {navLinks.map((link) => (

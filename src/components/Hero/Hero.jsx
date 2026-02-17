@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { ReactTyped } from "react-typed";
-import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope, FaSearch } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 import profileImg from '../../assets/profile.jpg';
@@ -20,7 +20,7 @@ const Hero = () => {
                     I am a{' '}
                     <span className={styles.multipleText}>
                         <ReactTyped
-                            strings={['Senior .Net Developer', 'Technical Architect', 'Problem Solver', 'Team Leader']}
+                            strings={['Senior .Net Developer', 'Technical Lead', 'Problem Solver', 'Team Leader']}
                             typeSpeed={100}
                             backSpeed={50}
                             backDelay={1000}
@@ -33,7 +33,7 @@ const Hero = () => {
                 <div className={styles.socialMedia}>
                     <a href="https://www.linkedin.com/in/lijupk" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                    <a href="#"><FaTwitter /></a>
+                    <a href="https://www.seek.com.au/profiles/liju-pullelykochappan-KBCdZyCK0Q" target="_blank" rel="noopener noreferrer"><FaSearch /></a>
                     <a href="mailto:lijupk@gmail.com"><FaEnvelope /></a>
                 </div>
 

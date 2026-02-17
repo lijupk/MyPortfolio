@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from './About.module.css';
+import aboutImg from '../../assets/about.jpg';
 
 const About = () => {
     return (
@@ -11,7 +12,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >
-                <img src="https://placehold.co/400x400/1a1a1a/FFF?text=About+Me" alt="About Me" />
+                <img src={aboutImg} alt="About Me" />
             </motion.div>
 
             <motion.div
@@ -32,7 +33,7 @@ const About = () => {
                         <span className={styles.text}>Years Experience</span>
                     </div>
                     <div className={styles.statItem}>
-                        <span className={styles.num}>100</span><span>+</span>
+                        <span className={styles.num}>30</span><span>+</span>
                         <span className={styles.text}>Projects Completed</span>
                     </div>
                 </div>

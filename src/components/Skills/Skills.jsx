@@ -13,7 +13,7 @@ const Skills = () => {
                     { icon: <FaCloud />, title: 'Cloud & DevOps', list: 'Azure Services, Docker, Kubernetes, CI/CD Pipelines (Azure DevOps, GitHub Actions)' },
                     { icon: <FaDatabase />, title: 'Database', list: 'SQL Server, PostgreSQL, MongoDB, Database Design & Optimization' },
                     { icon: <FaProjectDiagram />, title: 'Architecture', list: 'Microservices, Clean Architecture, Domain-Driven Design (DDD), SOLID Principles' },
-                    { icon: <FaJs />, title: 'Frontend', list: 'HTML5, CSS3, JavaScript, Angular, React, Vue.js (Basic)' },
+                    { icon: <FaJs />, title: 'Frontend', list: 'HTML5, CSS3, JavaScript, React, Vue.js' },
                     { icon: <FaUsersCog />, title: 'Leadership', list: 'Team Mentoring, Agile/Scrum, Code Reviews, Technical Strategy' }
                 ].map((skill, index) => (
                     <motion.div

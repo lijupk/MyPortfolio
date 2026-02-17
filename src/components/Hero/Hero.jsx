@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
 import { ReactTyped } from "react-typed";
-import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope, FaSearch } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaEnvelope, FaSearch } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 import profileImg from '../../assets/profile.jpg';

@@ -23,7 +23,7 @@ const About = () => {
                 transition={{ duration: 1 }}
             >
                 <h2 className="heading">About <span className="highlight">Me</span></h2>
-                <h3>Senior .Net Developer & Technical Architect</h3>
+                <h3>Senior .Net Developer & Technical Lead</h3>
                 <p>With over two decades of hands-on experience in the software industry, I specialize in the Microsoft technology stack. My journey has taken me from the early days of .NET to creating cloud-native applications on Azure using .NET Core. I am passionate about clean architecture, code quality, and mentoring the next generation of developers.</p>
                 <p>I excel in translating complex business requirements into technical solutions that are robust, secure, and scalable. My expertise extends beyond coding to system design, database optimization, and CI/CD implementation.</p>
 
@@ -33,7 +33,7 @@ const About = () => {
                         <span className={styles.text}>Years Experience</span>
                     </div>
                     <div className={styles.statItem}>
-                        <span className={styles.num}>30</span><span>+</span>
+                        <span className={styles.num}>50</span><span>+</span>
                         <span className={styles.text}>Projects Completed</span>
                     </div>
                 </div>

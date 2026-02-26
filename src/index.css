@@ -5,14 +5,14 @@
   /* Slate 900 */
   --second-bg-color: #1e293b;
   /* Slate 800 */
-  --text-color: #f8fafc;
-  /* Slate 50 */
+  --text-color: #ffffff;
+  /* White */
   --main-color: #0ea5e9;
   /* Sky 500 */
   --hover-color: #38bdf8;
   /* Sky 400 */
-  --dim-text: #94a3b8;
-  /* Slate 400 */
+  --dim-text: #cbd5e1;
+  /* Slate 300 */
 }
 
 * {
@@ -30,6 +30,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 /* Custom Scrollbar */
@@ -63,7 +64,7 @@ body {
   padding: 0.8rem 2.4rem;
   background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 10px var(--main-color);
+  box-shadow: 0 0 7px var(--main-color);
   font-size: 1.2rem;
   color: var(--bg-color);
   letter-spacing: 0.1rem;
@@ -74,9 +75,9 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px var(--main-color),
-    0 0 40px var(--main-color);
-  transform: scale(1.05);
+  box-shadow: 0 0 14px var(--main-color),
+    0 0 28px var(--main-color);
+  transform: scale(1.03);
 }
 
 html {

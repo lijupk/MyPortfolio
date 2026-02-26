@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- L (Forms the back and left tab of the folder) -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M45 33 V167 H155 V143 H69 V33 H45 Z" fill="#0ea5e9"/>
+  <!-- P (Forms the front flap and right edge of the folder) -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M69 57 H124 A31 31 0 0 1 124 119 H93 V143 H69 V57 Z M93 81 V95 H124 A7 7 0 0 0 124 81 H93 Z" fill="#38bdf8"/>
+</svg>

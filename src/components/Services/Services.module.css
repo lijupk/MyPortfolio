@@ -1,6 +1,6 @@
 .services {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 2rem 9% 1rem;
     background: var(--bg-color);
 }
 
@@ -19,6 +19,8 @@
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon {
@@ -37,10 +39,55 @@
     color: var(--dim-text);
     line-height: 1.6;
     margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.deliverables {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.deliverables h4 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+.deliverables ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.deliverables ul li {
+    font-size: 0.95rem;
+    color: var(--dim-text);
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.deliverables ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+}
+
+.duration {
+    font-size: 0.95rem;
+    color: var(--main-color);
+}
+
+.duration strong {
+    color: var(--text-color);
 }
 
 @media (max-width: 991px) {
     .services {
-        padding-bottom: 7rem;
+        padding-bottom: 1rem;
     }
 }

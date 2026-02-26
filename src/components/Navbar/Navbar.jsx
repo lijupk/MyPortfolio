@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoLockup from '../../assets/logo-lockup.svg';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -44,7 +45,9 @@ const Navbar = () => {
 
     return (
         <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
-            <a href="#home" className={styles.logo}>Liju <span className={styles.highlight}>Pullely</span></a>
+            <a href="#home" className={styles.logo}>
+                <img src={logoLockup} alt="Liju Pullely Portfolio Logo" />
+            </a>
 
             <nav className={`${styles.navbar} ${isMenuOpen ? styles.active : ''}`}>
                 {navLinks.map((link) => (
@@ -59,8 +62,10 @@ const Navbar = () => {
                 ))}
             </nav>
 
-            <div className={styles.menuBtn} onClick={toggleMenu}>
-                {isMenuOpen ? <FaTimes /> : <FaBars />}
+            <div className={styles.navActions}>
+                <div className={styles.menuBtn} onClick={toggleMenu}>
+                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                </div>
             </div>
         </header>
     );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaEnvelope, FaLinkedinIn, FaMapMarkerAlt } from 'react-icons/fa';
 import styles from './Contact.module.css';
 
 const Contact = () => {
@@ -24,6 +24,15 @@ const Contact = () => {
     return (
         <section className={styles.contact} id="contact">
             <h2 className="heading">Contact <span className="highlight">Me</span></h2>
+
+            <div className={styles.contactInfo}>
+                <div className={styles.quickLinks}>
+                    <a href="mailto:lijupk@gmail.com"><FaEnvelope /> lijupk@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/lijupk" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /> LinkedIn</a>
+                    <span><FaMapMarkerAlt /> Sydney, AU (AEST/AEDT)</span>
+                </div>
+                <p className={styles.availability}>Open to contract roles + freelance projects.</p>
+            </div>
 
             <iframe
                 name="hidden_iframe"

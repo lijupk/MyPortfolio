@@ -13,6 +13,19 @@ const About = () => {
                 transition={{ duration: 1 }}
             >
                 <img src={aboutImg} alt="About Me" />
+
+                <div className={styles.experienceStats}>
+                    <div className={styles.statItem}>
+                        <span className={styles.num}>20</span><span>+</span>
+                        <span className={styles.text}>Years Experience</span>
+                    </div>
+                    <div className={styles.statItem}>
+                        <span className={styles.num}>8</span><span>+</span>
+                        <span className={styles.text}>Years Gov Delivery</span>
+                    </div>
+                </div>
+
+                <a href="#projects" className="btn">View My Work</a>
             </motion.div>
 
             <motion.div
@@ -27,18 +40,16 @@ const About = () => {
                 <p>With over two decades of hands-on experience in the software industry, I specialize in the Microsoft technology stack. My journey has taken me from the early days of .NET to creating cloud-native applications on Azure using .NET Core. I am passionate about clean architecture, code quality, and mentoring the next generation of developers.</p>
                 <p>I excel in translating complex business requirements into technical solutions that are robust, secure, and scalable. My expertise extends beyond coding to system design, database optimization, and CI/CD implementation.</p>
 
-                <div className={styles.experienceStats}>
-                    <div className={styles.statItem}>
-                        <span className={styles.num}>20</span><span>+</span>
-                        <span className={styles.text}>Years Experience</span>
-                    </div>
-                    <div className={styles.statItem}>
-                        <span className={styles.num}>50</span><span>+</span>
-                        <span className={styles.text}>Projects Completed</span>
-                    </div>
+                <div className={styles.impactCard}>
+                    <h4>Impact Highlights</h4>
+                    <ul>
+                        <li>Reduced release effort from hours to minutes by automating Azure DevOps YAML pipelines and environment approvals.</li>
+                        <li>Improved API reliability using idempotency, retries/circuit-breaker patterns, and consistent error modeling (ProblemDetails).</li>
+                        <li>Optimised SQL + EF Core hotspots (indexes, query tuning) improving P95 response times by ~20–40%.</li>
+                        <li>Built production observability with AppInsights + Log Analytics dashboards, alerts, and end-to-end tracing.</li>
+                    </ul>
                 </div>
 
-                <a href="#contact" className="btn">Read More</a>
             </motion.div>
         </section>
     );

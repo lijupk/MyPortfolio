@@ -9,12 +9,54 @@ const Skills = () => {
 
             <div className={styles.skillsContainer}>
                 {[
-                    { icon: <FaMicrosoft />, title: '.NET & C#', list: '.NET Core, ASP.NET MVC, Web API, WPF, WinForms, Entity Framework' },
-                    { icon: <FaCloud />, title: 'Cloud & DevOps', list: 'Azure Services, Docker, Kubernetes, CI/CD Pipelines (Azure DevOps, GitHub Actions)' },
-                    { icon: <FaDatabase />, title: 'Database', list: 'SQL Server, PostgreSQL, MongoDB, Database Design & Optimization' },
-                    { icon: <FaProjectDiagram />, title: 'Architecture', list: 'Microservices, Clean Architecture, Domain-Driven Design (DDD), SOLID Principles' },
-                    { icon: <FaJs />, title: 'Frontend', list: 'HTML5, CSS3, JavaScript, React, Vue.js' },
-                    { icon: <FaUsersCog />, title: 'Leadership', list: 'Team Mentoring, Agile/Scrum, Code Reviews, Technical Strategy' }
+                    {
+                        icon: <FaMicrosoft />, title: '.NET & APIs', list: [
+                            'ASP.NET Core Web API, Minimal APIs',
+                            'REST: versioning, pagination, ProblemDetails',
+                            'Auth: OAuth2/OIDC, JWT, claims/roles',
+                            'Resilience: idempotency, retries, correlation IDs'
+                        ]
+                    },
+                    {
+                        icon: <FaCloud />, title: 'Azure & DevOps', list: [
+                            'App Services, Azure Functions, Key Vault, Storage',
+                            'AppInsights + Log Analytics: dashboards, alerts',
+                            'Azure DevOps YAML pipelines, environments, approvals',
+                            'Secrets/config strategy across environments'
+                        ]
+                    },
+                    {
+                        icon: <FaDatabase />, title: 'Data & Performance', list: [
+                            'SQL Server indexing, execution plans, tuning',
+                            'EF Core performance: tracking, batching, compiled queries',
+                            'Transactions, concurrency, deadlock mitigation',
+                            'Caching strategies where appropriate'
+                        ]
+                    },
+                    {
+                        icon: <FaProjectDiagram />, title: 'Architecture', list: [
+                            'API-first integration strategy, gateway patterns',
+                            'Clean Architecture, SOLID, pragmatic DDD boundaries',
+                            'Event-driven patterns (when applicable)',
+                            'Documentation: ADRs, OpenAPI/Swagger'
+                        ]
+                    },
+                    {
+                        icon: <FaJs />, title: 'Frontend', list: [
+                            'React/Vue experience, modern JS/TS',
+                            'API integration, state management basics',
+                            'Accessible UI, responsive design',
+                            'Performance minded UI (lazy load, bundle hygiene)'
+                        ]
+                    },
+                    {
+                        icon: <FaUsersCog />, title: 'Leadership', list: [
+                            'Tech lead across Agile (Scrum/Kanban/SAFe)',
+                            'Mentoring, peer reviews, coding standards',
+                            'Stakeholder communication & backlog shaping',
+                            'Delivery ownership, quality gates'
+                        ]
+                    }
                 ].map((skill, index) => (
                     <motion.div
                         className={styles.skillBox}
@@ -27,7 +69,11 @@ const Skills = () => {
                     >
                         <div className={styles.icon}>{skill.icon}</div>
                         <h3>{skill.title}</h3>
-                        <p>{skill.list}</p>
+                        <ul>
+                            {skill.list.map((item, i) => (
+                                <li key={i}>{item}</li>
+                            ))}
+                        </ul>
                     </motion.div>
                 ))}
             </div>

@@ -1,6 +1,6 @@
 .skills {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 2rem 9% 1rem;
     background: var(--bg-color);
 }
 
@@ -31,8 +31,25 @@
     font-weight: 600;
 }
 
-.skillBox p {
-    font-size: 1rem;
+.skillBox ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.skillBox ul li {
+    font-size: 0.95rem;
     color: var(--dim-text);
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.skillBox ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
 }

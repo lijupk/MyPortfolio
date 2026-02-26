@@ -1,6 +1,6 @@
 .contact {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 2rem 9% 1rem;
     background: var(--second-bg-color);
 }
 
@@ -9,6 +9,49 @@
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.contactInfo {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.quickLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quickLinks a,
+.quickLinks span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.quickLinks a:hover {
+    color: var(--main-color);
+}
+
+.quickLinks a svg,
+.quickLinks span svg {
+    color: var(--main-color);
+}
+
+.availability {
+    font-size: 1.1rem;
+    color: var(--dim-text);
+    background: rgba(14, 165, 233, 0.1);
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(14, 165, 233, 0.2);
 }
 
 .contact form .inputBox {

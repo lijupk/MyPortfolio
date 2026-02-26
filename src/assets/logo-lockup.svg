@@ -1,0 +1,35 @@
+<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-primary { 
+        fill: #0f172a; 
+        font-family: 'Outfit', 'Inter', system-ui, sans-serif; 
+        font-size: 52px; 
+        font-weight: 800; 
+        letter-spacing: -1px; 
+    }
+    .text-secondary { 
+        fill: #64748b; 
+        font-family: 'Inter', system-ui, sans-serif; 
+        font-size: 20px; 
+        font-weight: 500; 
+        letter-spacing: 8px; 
+    }
+    /* Auto-switch to dark theme text for dark environments */
+    @media (prefers-color-scheme: dark) {
+      .text-primary { fill: #f8fafc; }
+      .text-secondary { fill: #94a3b8; }
+    }
+  </style>
+  
+  <g transform="translate(0, 0)">
+    <!-- L (Folder back) -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M45 33 V167 H155 V143 H69 V33 H45 Z" fill="#0ea5e9"/>
+    <!-- P (Folder tab) -->
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M69 57 H124 A31 31 0 0 1 124 119 H93 V143 H69 V57 Z M93 81 V95 H124 A7 7 0 0 0 124 81 H93 Z" fill="#38bdf8"/>
+  </g>
+
+  <g transform="translate(180, 102)">
+    <text x="0" y="0" class="text-primary">LIJU PULLELY</text>
+    <text x="5" y="32" class="text-secondary">PORTFOLIO</text>
+  </g>
+</svg>

@@ -21,7 +21,7 @@ const About = () => {
                     </div>
                     <div className={styles.statItem}>
                         <span className={styles.num}>8</span><span>+</span>
-                        <span className={styles.text}>Years Gov Delivery</span>
+                        <span className={styles.text}>Years Federal Gov</span>
                     </div>
                     <div className={styles.statItem}>
                         <span className={styles.num}>4</span><span>+</span>

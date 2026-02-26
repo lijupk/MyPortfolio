@@ -1,0 +1,42 @@
+.certifications {
+    min-height: 50vh;
+    padding: 2rem 9% 1rem;
+    background: var(--bg-color);
+}
+
+.certificationsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.certBox {
+    background: var(--second-bg-color);
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s ease;
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.icon {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.certBox h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.certBox p {
+    font-size: 1rem;
+    color: var(--dim-text);
+}

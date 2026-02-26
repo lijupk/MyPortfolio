@@ -23,6 +23,10 @@ const About = () => {
                         <span className={styles.num}>8</span><span>+</span>
                         <span className={styles.text}>Years Gov Delivery</span>
                     </div>
+                    <div className={styles.statItem}>
+                        <span className={styles.num}>4</span><span>+</span>
+                        <span className={styles.text}>Years Banking</span>
+                    </div>
                 </div>
 
                 <a href="#projects" className="btn">View My Work</a>

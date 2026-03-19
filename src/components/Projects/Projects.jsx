@@ -43,11 +43,11 @@ const Projects = () => {
 
     return (
         <section className={styles.portfolio} id="projects">
-            <h2 className="heading">Latest <span className="highlight">Projects</span></h2>
+            <h2 className="heading">Enterprise & Freelance <span className="highlight">Projects</span></h2>
 
             <div className={styles.portfolioContainer}>
                 {projectList.map((project, index) => (
-                    <motion.div
+                    <motion.article
                         className={styles.portfolioBox}
                         key={index}
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -55,14 +55,14 @@ const Projects = () => {
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
                     >
-                        <img src={`https://placehold.co/600x400/1a1a1a/FFF?text=${project.title.replace(/ /g, '+')}`} alt={project.title} />
+                        <img src={`https://placehold.co/600x400/1a1a1a/FFF?text=${project.title.replace(/ /g, '+')}`} alt={`Freelance .NET Developer Project: ${project.title}`} />
                         <div className={styles.portfolioLayer}>
                             <h4>{project.title}</h4>
                             <p>{project.desc}</p>
                             <p style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '0.9rem' }}>{project.tech}</p>
                             {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt /></a>}
                         </div>
-                    </motion.div>
+                    </motion.article>
                 ))}
             </div>
         </section>

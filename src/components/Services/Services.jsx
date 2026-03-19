@@ -5,15 +5,15 @@ import styles from './Services.module.css';
 const Services = () => {
     return (
         <section className={styles.services} id="services">
-            <h2 className="heading">My <span className="highlight">Services</span></h2>
+            <h2 className="heading">Freelance & Consulting <span className="highlight">Services</span></h2>
 
             <div className={styles.servicesContainer}>
                 {[
                     {
                         icon: <FaCode />,
-                        title: 'Custom Software Development',
-                        desc: 'Tailored software solutions delivering high performance and reliability for your business needs.',
-                        deliverables: ['Full-stack web applications', 'Secure RESTful APIs', 'Cloud-native architecture'],
+                        title: '.NET Core Custom Software Development',
+                        desc: 'Tailored software solutions delivering high performance for your business needs. Available for custom freelance contracts.',
+                        deliverables: ['Full-stack React/.NET apps', 'Secure RESTful APIs', 'Cloud-native architecture'],
                         duration: '4-12 weeks'
                     },
                     {
@@ -25,13 +25,13 @@ const Services = () => {
                     },
                     {
                         icon: <FaChartLine />,
-                        title: 'Technical Consultation',
-                        desc: 'Strategic advice on technology stack selection, architecture design, and development processes.',
-                        deliverables: ['Architecture reviews & ADRs', 'Team mentoring & best practices', 'Performance & audits'],
+                        title: 'Strategic Tech Lead & Consultation',
+                        desc: 'Strategic advice on technology stack selection, architecture design, and development processes for B2B IT projects.',
+                        deliverables: ['Architecture reviews & ADRs', 'Team mentoring & best practices', 'Performance tuning'],
                         duration: '1-4 weeks'
                     }
                 ].map((service, index) => (
-                    <motion.div
+                    <motion.article
                         className={styles.serviceBox}
                         key={index}
                         initial={{ opacity: 0, y: 30 }}
@@ -53,7 +53,7 @@ const Services = () => {
                         </div>
 
                         <a href="#contact" className="btn">Book a 15-min call</a>
-                    </motion.div>
+                    </motion.article>
                 ))}
             </div>
         </section>
